@@ -1,0 +1,57 @@
+body {
+  color: white;
+  background-color: black;
+
+}
+
+a {
+  color: blue;
+}
+
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #28282B;
+}
+
+li.menu {
+  float: left;
+}
+
+li.menu a.menu {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li.menu a.menu:hover {
+  background-color: #111;
+}
+
+.button:link,                 /* Change this */
+.button:visited {             /* Change this */
+  display: block;             /* Add this */
+  text-decoration: none;      /* Add this */
+
+  color: #FFF;                /* The rest is the same */
+  background-color: #28282B;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+
+  width: 200px;
+  margin: 20px auto;
+}
+
+.button:hover,
+.button:visited:hover {
+  color: #FFF;
+  background-color: #343434;  /* Light blue */
+}
