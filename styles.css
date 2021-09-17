@@ -8,37 +8,68 @@ a {
   color: blue;
 }
 
-ul.menu {
+.page {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #28282B;
+  background-color: #343434;
 }
 
-li.menu {
+.menu li {
   float: left;
 }
 
-li.menu a.menu {
-  display: block;
+.menu li, .menu a, .dropbtn {
+  display: inline-block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
-li.menu a.menu:hover {
-  background-color: #111;
+.menu li a:hover, .dropdown:hover .dropbtn {
+  background-color: #36454F;
 }
 
-.button:link,                 /* Change this */
-.button:visited {             /* Change this */
-  display: block;             /* Add this */
-  text-decoration: none;      /* Add this */
+.menu li.dropdown {
+  display: inline-block;
+}
 
-  color: #FFF;                /* The rest is the same */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #353935;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #28282B;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.button:link,
+.button:visited {
+  display: block;
+  text-decoration: none;
+
+  color: #FFF;
   background-color: #28282B;
   font-weight: bold;
   padding: 20px;
@@ -53,5 +84,5 @@ li.menu a.menu:hover {
 .button:hover,
 .button:visited:hover {
   color: #FFF;
-  background-color: #343434;  /* Light blue */
+  background-color: #343434;
 }
